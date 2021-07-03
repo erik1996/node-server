@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { ItemModel } from "../data/models/Item";
+import { ItemModel } from "../data/models/Item.model";
 
 export async function getItemController(req: Request, res: Response) {
 	const list = await ItemModel.find();
