@@ -1,8 +1,4 @@
-# Docker Node MongoDB Example
-
-> Simple example of a dockerized Node/Mongo app
-
-![Image](https://i.ibb.co/4Fgt31L/demo.gif)
+# Dockerised Node Server with MongoDB 
 
 ## Quick Start
 
@@ -14,9 +10,10 @@ docker-compose up
 # Tear down
 docker-compose down
 
-# To be able to edit files, add volume to compose file
-volumes: ['./:/usr/src/app']
-
 # To re-build
 docker-compose build
+
+# To run by docker composer
+docker-compose -f ./docker-compose.yml up --build 
+
 ```
